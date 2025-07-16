@@ -11,11 +11,95 @@ font-family: Arial;
 color: black;
 text-align: center;
 }
+
 header {
  background-color: tomato;
 color: white;
 text-align: center;
 padding: 20px;
+}
+
+h1 {
+ color:navy;
+font-size: 40px;
+}
+
+p {
+ font-size: 18px;
+}
+
+img {
+width: 250px;
+height: 250px;
+border-radius: 22%;
+border:15px solid green;margin-top: 10px;
+}
+
+.table-style1 {
+ width: 80%;
+margin: 20px auto;
+border: 2px solid navy;
+}
+
+.table-style1 th, .table-style1 td {
+border: 1px solid navy;
+padding: 10px;
+text-align: center;
+}
+.table-style1 th {
+background-color: lightblue;
+}
+
+.table-style2 {
+width: 60%;
+margin: 20px auto;
+border-collapse: collapse;
+border: 2px solid darkgreen;
+}
+.table-style2 th, .table-style2 td {
+border: 1px solid darkgreen;
+padding: 10px;
+text-align: center;
+}
+.table-style2 th {
+background-color: lightgreen;
+}
+
+.about {
+width: 60%;
+margin: 20px auto;
+text-align: left;
+}
+
+div.mycontainer {
+width: 66%;
+overflow: auto;
+
+}
+div.mycontainer div {
+width: 50%;
+float: left;
+}
+
+.video {
+width: 55%;
+margin: 10px auto;
+text-align: center;
+border: 3px solid green;
+}
+
+.list-style1 {
+list-style-type: square;
+color: darkblue;
+text-align: left;
+margin: 20px;
+}
+
+.list-style2 {
+list-style-type: circle;
+color: darkgreen;
+text-align: left;
+margin:20px;
 }
 
 
@@ -32,15 +116,15 @@ Age: 40
 Location: Kansas City, MO
 </pre>
 </header>
-<section>
+<section class="about">
 <p>Check out my favorite website: <a href="https://myturtlestore.com/?srsltid=AfmBOopAZ9VKkEXAJNZ8io5j4gQsUEU0YCJuxijTyEQkNCSfHtMu6BLD" target="_blank">Turtles n Stuff</a></p>
 <a href="mailto:jdamos0185@gmail.com" target="_blank">jdamos0185@gmail.com</a>
 <a href="https://turtlesandtortoises.com/" target="_blank">
-<img src="https://github.com/jamos48/jamos48/blob/main/babyt.jpg?raw=true" alt="baby tortoise"></a>
+<img src="https://github.com/jamos48/jamos48/blob/main/babyt.jpg?raw=true" alt="baby tortoise" title = "Click Here To Buy One!"></a>
 </section>
 <hr>
 <h2>My Hobbies</h2>
-<table>
+<table class="table-style1">
 <tr>
 <th>Hobby</th>
 <th>Hours/Week</th>
@@ -56,7 +140,7 @@ Location: Kansas City, MO
 </table>
 
 <h2>My Favorite Movies</h2>
-<table>
+<table class="table-style2">
 <tr>
 <th>Movie</th>
 <th>Genre</th>
@@ -71,21 +155,28 @@ Location: Kansas City, MO
 </tr>
 </table>
 
+<div class ="mycontainer">
+<div>
 <h2>My Favorite Foods</h2>
-<ul>
+<ul class="list-style1">
 <li>Eggplant Parm</li>
 <li>Pizza Rolls</li>
 <li>Loaded Baked Potato</li>
 </ul>
+</div>
 
+
+<div>
 <h2>My Favorite Drinks</h2>
-<ul>
+<ul class="list-style2">
 <li>Cranberry Juice</li>
 <li>Iced Tea</li>
 <li>Water</li>
 </ul>
+</div>
+</div>
 
-<section>
+<section class ="video">
 <h2>My Favorite Video</h2>
 <iframe width="677" height="381" src="https://www.youtube.com/embed/a6QHzIJO5a8"></iframe>
 </section>
